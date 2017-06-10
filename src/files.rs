@@ -17,7 +17,7 @@ pub fn include_file<P: AsRef<Path>>(filename: P) -> Result<File> {
 
 
 /// A basic representation of a file.
-#[derive(PartialEq, Clone, Default, Debug)]
+#[derive(PartialEq, Clone, Debug)]
 pub struct File {
     path: PathBuf,
 }
